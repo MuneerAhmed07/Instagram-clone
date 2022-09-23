@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header chat-header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="title">ChatMe</h1>
+            </a>
+            <button class="logo-btn"><i class="fas fa-angle-down"></i></button>
+            <div class="more-link">
+                <a href="#"><i class="far fa-user"></i>Following</a>
+                <a href="#"><i class="far fa-star"></i>Favorites</a>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search">
+            <label for="search-box"><i class="fas fa-search search-icon"></i></label>
+            <input type="search" class="search-input" id="search-box" placeholder="Search">
+        </div>
+        <!-- Nav Icons -->
+        <nav class="nav-icons">
+            <a href="index.html" class="navbar-icon"><i class="fas fa-home-alt nav-links"></i></a>
+            <a href="chat.html" class="navbar-icon on-page"><i class="fab fa-facebook-messenger nav-links"></i></a>
+            <div class="navbar-icon new-post-icon"><i class="far fa-square-plus nav-links"></i></div>
+            <a href="#" class="navbar-icon"><i class="far fa-compass nav-links"></i></a>
+            <div class="navbar-icon">
+                <i class="far fa-heart nav-links  heart-icon"></i>
+                <!-- Heart PopUp box -->
+                <div class="heart-popup-box chat-heart-popup">
+                    <h2>This Month</h2>
+
+                    <!-- like One -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-12.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-4.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Two -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-2.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-3.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- like three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-3.png" alt="like-profile">
+                                <p><strong>Edward_rebort</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-7.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-6.png" alt="like-profile">
+                                <p><strong>Charlotte_Evelyn</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-2.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Four -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-8.png" alt="like-profile">
+                                <p><strong>rack-dov</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-1.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+            <div>
+                <img src="images/Profile/profile-1.png" alt="user-profile" class="main-profile">
+                <!-- Profile PopUp box -->
+                <div class="pop-box chat-profile-box">
+                    <a href="profile-page.html"><i class="fas fa-user"></i>Profile</a>
+                    <a href="#"><i class="far fa-bookmark"></i>Saved</a>
+                    <a href="settings.html"><i class="fas fa-gear"></i>Settings</a>
+                    <a href="#"><i class="fas fa-repeat"></i>Switch accounts</a>
+                    <hr>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Upload a new post section -->
+
+    <div class="edit-box-container" id="share-new-post">
+        <i class="fas fa-times close-button"></i>
+        <div class="edit_box share-file-box">
+            <h3>Create new post</h3>
+            <div class="upload-new-post">
+                <i class="fas fa-cloud-arrow-up"></i>
+                <p>Drag photos and videos here</p>
+            </div>
+            <label for="upload-file">Select from computer</label>
+            <input type="file" name="" id="upload-file">
+        </div>
+    </div>
+
+    <!-- chat Home section -->
+
+    <section class="home-container chat-home-container">
+
+        <!-- left-column -->
+        <div class="chat-left-col">
+
+            <!-- content-heading -->
+            <div class="chat-heading">
+                <h2>Secret_wisher</h2>
+                <button class="chat-head-button logo-btn"><i class="fas fa-angle-down"></i></button>
+                <i class="fas fa-pen-to-square new-message-btn send-message"></i>
+            </div>
+
+            <!-- contact list -->
+            <div class="contant-list">
+                <!-- contant One -->
+                <a href="#">
+                    <div class="contant">
+                        <img src="images/Profile/profile-6.png" alt="contant-profile">
+                        <div class="contant-name">
+                            <p>Charlotte_Evelyn</p>
+                            <span>send post . 3w</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- contant Two -->
+                <a href="#">
+                    <div class="contant f-active">
+                        <img src="images/Profile/profile-11.png" alt="contant-profile">
+                        <div class="contant-name">
+                            <p>make_jerry6</p>
+                            <span>Active now</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- contant Three -->
+                <a href="#">
+                    <div class="contant">
+                        <img src="images/Profile/profile-4.png" alt="contant-profile">
+                        <div class="contant-name">
+                            <p>Camila_Luna</p>
+                            <span>How are you! . now</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right-column -->
+        <div class="chat-right-col">
+            <div class="chat-container">
+                <div class="send-icon"><i class="i far fa-paper-plane"></i></div>
+                <p>Your Messages</p>
+                <span>Send private photos and messages to a friend or group</span>
+                <button class="send-message">Send Message</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- New message PopUp box -->
+
+    <div class="edit-box-container" id="new-message-popup">
+        <div class="edit_box popup-message-box">
+            <!-- Top head part -->
+            <div class="box-top-head">
+                <i class="fas fa-times close-message-box"></i>
+                <h2>New message</h2>
+                <a href="#" class="next-btn">Next</a>
+            </div>
+            <!-- search part -->
+            <div class="search-contant">
+                <h3>To: </h3>
+                <input type="search" placeholder="search...">
+            </div>
+            <!-- sugguested contant -->
+            <div class="sugguested-contant">
+                <h2>Sugguested</h2>
+
+                <!-- contact one -->
+                <a href="#">
+                    <div class="contant">
+                        <label for="contant-check" class="label">
+                            <img src="images/Profile/profile-6.png" alt="contant-profile">
+                            <div class="contant-name">
+                                <p>Charlotte_Evelyn</p>
+                                <span>send post . 3w</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" id="contant-check">
+                    </div>
+                </a>
+                <!-- contant Two -->
+                <a href="#">
+                    <div class="contant">
+                        <label for="contant-check-1" class="label">
+                            <img src="images/Profile/profile-11.png" alt="contant-profile">
+                            <div class="contant-name">
+                                <p>make_jerry6</p>
+                                <span>Active now</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" id="contant-check-1">
+                    </div>
+                </a>
+                <!-- contant Three -->
+                <a href="#">
+                    <div class="contant">
+                        <label for="contant-check-2" class="label">
+                            <img src="images/Profile/profile-4.png" alt="contant-profile">
+                            <div class="contant-name">
+                                <p>Camila_Luna</p>
+                                <span>How are you! . now</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" id="contant-check-2">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript section -->
+    <script>
+
+        const newMessageBox = document.querySelector("#new-message-popup");
+        const sendMessageBtn = document.querySelector(".send-message");
+
+        document.querySelectorAll(".send-message").forEach(event => {
+            event.onclick = () => {
+                newMessageBox.classList.add("message-box-show");
+
+                profilePopUp.classList.remove("show");
+                heartPopUp.classList.remove("like-box-show");
+                links.classList.remove("active");
+            };
+        });
+
+        document.querySelector(".close-message-box").addEventListener("click", () => {
+            newMessageBox.classList.remove("message-box-show");
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>

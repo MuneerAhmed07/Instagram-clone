@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header chat-header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="title">ChatMe</h1>
+            </a>
+            <button class="logo-btn"><i class="fas fa-angle-down"></i></button>
+            <div class="more-link">
+                <a href="#"><i class="far fa-user"></i>Following</a>
+                <a href="#"><i class="far fa-star"></i>Favorites</a>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search">
+            <label for="search-box"><i class="fas fa-search search-icon"></i></label>
+            <input type="search" class="search-input" id="search-box" placeholder="Search">
+        </div>
+        <!-- Nav Icons -->
+        <nav class="nav-icons">
+            <a href="index.html" class="navbar-icon"><i class="fas fa-home-alt nav-links"></i></a>
+            <a href="chat.html" class="navbar-icon on-page"><i class="fab fa-facebook-messenger nav-links"></i></a>
+            <div class="navbar-icon new-post-icon"><i class="far fa-square-plus nav-links"></i></div>
+            <a href="#" class="navbar-icon"><i class="far fa-compass nav-links"></i></a>
+            <div class="navbar-icon">
+                <i class="far fa-heart nav-links  heart-icon"></i>
+                <!-- Heart PopUp box -->
+                <div class="heart-popup-box chat-heart-popup">
+                    <h2>This Month</h2>
+
+                    <!-- like One -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-12.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-4.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Two -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-2.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-3.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- like three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-3.png" alt="like-profile">
+                                <p><strong>Edward_rebort</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-7.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-6.png" alt="like-profile">
+                                <p><strong>Charlotte_Evelyn</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-2.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Four -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-8.png" alt="like-profile">
+                                <p><strong>rack-dov</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-1.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+            <div>
+                <img src="images/Profile/profile-1.png" alt="user-profile" class="main-profile">
+                <!-- Profile PopUp box -->
+                <div class="pop-box chat-profile-box">
+                    <a href="profile-page.html"><i class="fas fa-user"></i>Profile</a>
+                    <a href="#"><i class="far fa-bookmark"></i>Saved</a>
+                    <a href="settings.html"><i class="fas fa-gear"></i>Settings</a>
+                    <a href="#"><i class="fas fa-repeat"></i>Switch accounts</a>
+                    <hr>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Upload a new post section -->
+
+    <div class="edit-box-container" id="share-new-post">
+        <i class="fas fa-times close-button"></i>
+        <div class="edit_box share-file-box">
+            <h3>Create new post</h3>
+            <div class="upload-new-post">
+                <i class="fas fa-cloud-arrow-up"></i>
+                <p>Drag photos and videos here</p>
+            </div>
+            <label for="upload-file">Select from computer</label>
+            <input type="file" name="" id="upload-file">
+        </div>
+    </div>
+
+    <!-- chat Home section -->
+
+    <section class="home-container chat-home-container setting-home-container">
+        <!-- setting Left-col -->
+        <div class="setting-left-col">
+            <!-- Header box -->
+            <div class="left-header-box">
+                <h2>Honey</h2>
+                <h3>Account settings are moving</h3>
+                <p>Soon, Accounts Center will be the one place to manage your account info and experiences across Honey technologies like Facebook, Messenger and Instagram</p>
+                <a href="#" class="setting-learn-more-btn">Learn more</a>
+            </div>
+            <!-- Extra Link box  -->
+            <div class="left-setting-link">
+                <a href="#" class="setting-edit-profile">Edit profile</a>
+                <div class="setting-links">
+                    <a href="#" class="link">Change password</a>
+                    <a href="#" class="link">Change password</a>
+                    <a href="#" class="link">Apps and websites</a>
+                    <a href="#" class="link">Email notifications</a>
+                    <a href="#" class="link">Push notifications</a>
+                    <a href="#" class="link">Push notifications</a>
+                    <a href="#" class="link">Manage Contacts</a>
+                    <a href="#" class="link">Privacy and security</a>
+                    <a href="#" class="link">Supervision</a>
+                    <a href="#" class="link">Login activity</a>
+                    <a href="#" class="link">Email from Instagram</a>
+                    <a href="#" class="link">Help</a>
+                    <a href="#" class="link">Digital collectibles</a>
+                </div>
+                <div class="account-setting">
+                    <a href="#" class="account-link">Switch to professional</a>
+                    <a href="#" class="account-link">account</a>
+                </div>
+                <div class="left-header-box left-bottom">
+                    <h2>Honey</h2>
+                    <h3 class="account-center">Accounts Center</h3>
+                    <p class="left-account-desc">Control settings for connected experiences across Instagram, the Facebook app and Messenger, including story and post sharing and logging in.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- setting Right-col -->
+        <div class="setting-right-col">
+
+            <!-- setting profile -->
+            <div class="setting-profile">
+                <img src="images/Profile/profile-1.png" alt="profile-image" width="50px">
+                <div class="setting-profile-name">
+                    <p>Secret_wisher</p>
+                    <span class="change-profile-photo">Change profile photo</span>
+                </div>
+            </div>
+            <!-- name input -->
+            <div class="name-input">
+                <label for="name">Name</label>
+                <div class="input-description">
+                    <input type="text" placeholder="Web Developer" id="name" autocomplete="off">
+                    <p>Help people discover your account by using the name you're known by: either your full name, nickname, or business name.</p>
+                    <p>You can only change your name twice within 14 days.</p>
+                </div>
+            </div>
+            <!-- userName input -->
+            <div class="user-name-input name-input">
+                <label for="u-name">Username</label>
+                <div class="input-description">
+                    <input type="text" placeholder="Secret_wisher" id="u-name" autocomplete="off">
+                    <p>In most cases, you'll be able to change your username back to codingbloodhound for another 14 days.</p>
+                </div>
+            </div>
+            <!-- website input -->
+            <div class="name-input website-input">
+                <label for="website">Website</label>
+                <div class="input-description">
+                    <input type="text" placeholder="Website" id="website" readonly>
+                    <p>Editing your links is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.</p>
+                </div>
+            </div>
+            <!-- Bio textarea -->
+            <div class="name-input bio-textarea">
+                <label for="bio">Bio</label>
+                <div class="input-description">
+                    <textarea id="bio" cols="50" rows="5" placeholder="Bio"></textarea>
+                    <span class="word-count">3 / 150</span>
+                    <h3>Personal information</h3>
+                    <p>Provide your personal information, even if the account is used for a business, a pet or something else. This won't be a part of your public profile.</p>
+                </div>
+            </div>
+            <!-- Email input -->
+            <div class="name-input email-input-field">
+                <label for="email">Email</label>
+                <div class="input-description">
+                    <input type="email" placeholder="email" id="email" autocomplete="off">
+                </div>
+            </div>
+            <!-- phone number input -->
+            <div class="name-input Phone-number-input email-input-field">
+                <label for="phone">Phone Number</label>
+                <div class="input-description">
+                    <input type="number" placeholder="+92 308 6454127" id="phone" autocomplete="off">
+                </div>
+            </div>
+            <!-- Gender Input -->
+            <div class="name-input email-input-field gender-input">
+                <label for="gender">Gender</label>
+                <div class="input-description">
+                    <input type="text" placeholder="Prefer not to say" id="gender" autocomplete="off">
+                </div>
+            </div>
+            <!-- similar account -->
+            <div class="name-input Phone-number-input email-input-field smilar-account">
+                <label for="similar">Similar account suggestions</label>
+                <div class="input-description">
+                    <input type="checkbox" id="similar" checked>
+                    <span class="checkbox">Include your account when recommending similar accounts people might want to follow.</span>
+                </div>
+            </div>
+            <!-- setting submit button -->
+            <div class="setting-submit-button">
+                <button class="submit">submit</button>
+                <span class="dactivate">Temporarily deactivate my account</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

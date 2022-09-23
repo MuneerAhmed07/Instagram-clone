@@ -1,0 +1,1924 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+.on-page {
+    box-shadow: 0 2px 15px rgba(0,0,0,.3);
+    border-radius: 50%;
+}
+
+/* ---------------------------- Header Section -------------------------- */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 7%;
+    border-bottom: 1px solid #ccc;
+    z-index: 999;
+}
+
+
+/* ----- Logo ----- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.logo-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.logo-btn i {
+    font-size: 1.5rem;
+    color: #636262;
+    margin-top: 10px;
+}
+
+.more-link {
+    display: none;
+    width: 130px;
+    position: absolute;
+    top: 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.more-link.active {
+    display: block;
+}
+
+.more-link a { 
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.more-link a i {
+    margin-right: 10px;
+}
+
+.more-link a:hover {
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* ---- search box ---- */
+
+.search {
+    background: #f3f0f0;
+    width: 260px;
+    height: 35px;
+    padding: 5px 10px 5px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    cursor: text;
+}
+
+.search-icon {
+    font-size: 1.6rem;
+    color: #706d6d;
+    margin-top: 5px;
+}
+
+/* ------ nav Icons ------  */
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons .nav-links {
+    font-size: 2.2rem;
+    color: #222;
+}
+
+.nav-icons .navbar-icon {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.nav-icons .heart-icon {
+    cursor: pointer;
+}
+
+.nav-icons .main-profile {
+    width: 28px;
+    margin-left: 8px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/*--------------- Like section pop-up Box ----------------- */
+
+.heart-popup-box {
+    position: fixed;
+    top: 60px;
+    right: 140px;
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 1px 15px rgba(0,0,0,.2);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: default;
+    overflow: auto;
+    display: none;
+}
+
+.heart-popup-box.like-box-show {
+    display: block;
+}
+
+.heart-popup-box::after {
+    content: "";
+    position: fixed;
+    top: 52px;
+    right: 213px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+    box-shadow: -1px -2px 15px rgba(0,0,0,.05);
+    z-index: -6;
+}
+
+.heart-popup-box .like-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.heart-popup-box .like-image {
+    display: flex;
+    align-items: center;
+}
+
+.heart-popup-box .like-image img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.heart-popup-box .like-image p {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.heart-popup-box .like-box .heart-post {
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/*------------------ Profile pop-up box ----------- */
+
+.pop-box {
+    position: fixed;
+    top: 60px;
+    right: 130px;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0 1px 15px rgba(0,0,0,.2);
+    border-radius: 5px;
+    display: none;
+}
+
+.pop-box.show {
+    display: block;
+}
+
+.pop-box::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 45px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+    box-shadow: -1px -2px 15px rgba(0,0,0,.05);
+    z-index: -1;
+}
+
+.pop-box a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.pop-box a i {
+    margin-right: 15px;
+}
+
+.pop-box a:hover {
+    background: #f9f9f9;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* ---------------------------- New Post upload Part ------------------------ */
+
+.new-post-icon {
+    cursor: pointer;
+}
+
+#share-new-post {
+    visibility: hidden;
+}
+
+#share-new-post.post-box-show {
+    visibility: visible;
+}
+
+.share-file-box {
+text-align: center;
+padding: 20px 0;
+width: 450px !important;
+height: 500px;
+}
+
+#share-new-post .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.share-file-box h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.upload-new-post {
+    margin-top: 80px;
+    padding: 60px 20px 10px 20px;
+}
+
+.upload-new-post i {
+    font-size: 9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.upload-new-post p {
+    font-size: 2.3rem;
+    color: #555;
+}
+
+.share-file-box input {
+    display: none;
+}
+
+.share-file-box label {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background: #00b7ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+/* ------------------------------- Edit Box Container section ---------------  */
+
+.edit-box-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.6);
+    z-index: 1000;
+}
+
+#edit {
+    visibility: hidden;
+}
+
+#edit.active {
+    visibility: visible;
+}
+
+.edit-box-container .edit_box {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+.edit-box-container .edit_box a {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #000;
+    padding: 13px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.edit-box-container .edit_box a:first-child {
+    color: rgba(255, 0, 0,.7);
+    font-weight: bold;
+}
+
+.edit-box-container .edit_box .cancel {
+    width: 100%;
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 13px 20px;
+    outline: none;
+    color: #000;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/* --------------------------------- Home Section ---------------------------- */
+
+.home-container {
+    width: 870px;
+    margin: 90px auto;
+    display: flex;
+    gap: 30px;
+}
+
+/*----------------------------- left column --------------------------- */
+
+.home-container .left-col {
+    flex: 1 1 60%;
+}
+
+.home-container .left-col .post {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.home-container .left-col .post .profile-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.profile-title .image {
+    display: flex;
+    align-items: center;
+}
+
+.profile-title .image .post-profile-img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-title .image .post-profile-link {  
+    margin-right: 15px;
+}
+
+.profile-title .image h3 {
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.profile-title  .post-edit-icon {
+    font-size: 2rem;
+    color: #222;
+    cursor: pointer;
+}
+
+.post-image {
+    max-height: 480px;
+    overflow: hidden;
+}
+
+.home-container .left-col .post .post-image img {
+    width: 100%;
+}
+
+.share-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.share-icons .share .link {
+    margin-right: 15px;
+}
+
+.share-icons .link {
+    font-size: 2rem;
+    color: #000;
+    transition: .2s linear;
+}
+
+.share-icons .link:hover {
+    color: #706d6d;
+}
+
+.description {
+    padding: 5px 15px;
+}
+
+.description .like {
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.description .post-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.description .post-title a {
+    margin-left: 4px;
+    color: #000;
+}
+
+.description .time {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.comment-box {
+    border-top: 1px solid #eeecec;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.comment-box span {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.comment-box textarea {
+    width: 100%;
+    margin: 0 10px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.comment-box .post-btn {
+    font-size: 1.4rem;
+    color: #add8eb;
+    font-weight: bold;
+    transition: .2s linear;
+}
+
+.comment-box .post-btn:hover {
+    color: #00b7ff;
+}
+
+
+/* --- for friend like style ---- */
+
+.like-by {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.like-by img {
+    width: 25px;
+}
+
+.like-by .f-like-desc {
+    font-size: 1.3rem;
+    color: #000;
+    margin-left: 10px;
+}
+
+.show-comment {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #c0bebe;
+    margin-bottom: 8px;
+}
+
+/* ------------- segguested people slider -----------  */
+
+.suggested-heading {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggested-heading h2 {
+    color: #555;
+}
+
+.suggested-heading .see {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0084ff;
+}
+
+/* slider section  */
+
+.box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    overflow: hidden;
+}
+
+.box-profile {
+    width: 160px;
+    margin: 2rem .5rem;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.box img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.box span {
+    font-size: 1.3rem;
+    color: #c0bebe;
+    font-weight: 400;
+}
+
+.box .slide-btn {
+    display: block;
+    margin-top: 15px;
+    background: #0084ff;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* ---------------------------- right cloumn --------------------------- */
+
+.home-container .right-col {
+    flex: 1 1 40%;
+    padding: 20px 5px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-profile-image {
+    display: flex;
+    align-items: center;
+}
+
+.right-profile-image a {
+    margin-right: 15px;
+}
+
+.right-profile-image img {
+    width: 65px;
+}
+
+.right-profile-image .name h3 {
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.right-profile-image .name span {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.switch {
+    font-size: 1.2rem;
+    color: #00b7ff;
+    font-weight: bold;
+}
+
+/*------ suggestion title ---- */
+
+.new-friends {
+    padding: 15px 0;
+}
+
+.suggestion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggestion-title h2 {
+    font-size: 1.4rem;
+    color: #bebebe;
+}
+
+.see-all {
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 600;
+}
+
+/* ------- new people ----- */
+
+.people {
+    padding: 15px 0 10px 5px;
+}
+
+.people-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.peo-image {
+    display: flex;
+    align-items: center;
+}
+
+.peo-image .people-image {
+    margin-right: 15px;
+}
+
+.peo-image .people-image img {
+    width: 40px;
+}
+
+.peo-image .name h3 {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.peo-image .name span {
+    font-size: 1.2rem;
+    color: #c0bebe;
+}
+
+/* -------- extra-Links -------- */
+
+.support-link {
+    margin-bottom: 20px;
+}
+
+.support-link .list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.support-link .list .extra-link {
+    font-size: 1.2rem;
+    color: #c0bebe;
+    transition: .2s linear;
+}
+
+.support-link .list li span {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: #c0bebe;
+    margin: 0 5px;
+    border-radius: 50%;
+
+}
+
+.support-link .list .extra-link:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #c0bebe;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------- CSS For Chat Page ------------------------------------------   */
+
+/* chat header */
+.chat-header {
+    padding: 10px 12%;
+}
+
+.chat-heart-popup {
+    right: 200px;
+}
+
+.chat-heart-popup::after {
+    content: "";
+    position: fixed;
+    top: 52px;
+    right: 260px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+    box-shadow: -1px -2px 15px rgba(0,0,0,.05);
+    z-index: -6;
+}
+
+.chat-profile-box {
+    right: 170px;
+}
+
+/* ------ chat home container ------  */
+
+.chat-home-container {
+    width: 950px;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff !important;
+    margin-bottom: 0 !important;
+    gap: 0 !important;
+}
+
+/* ----- chat-left-col ---- */
+.chat-left-col {
+    flex: 1 1 35%;
+    border-right: 1px solid #ccc;
+}
+
+.chat-left-col .chat-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-left-col .chat-heading h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.chat-left-col .chat-heading .chat-head-button i {
+    margin-top: 0;
+    font-size: 2rem !important;
+    margin-right: 100px;
+}
+
+.chat-left-col .chat-heading .new-message-btn {
+    font-size: 2.2rem;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/* contact list part */
+
+.contant-list .contant {
+    display: flex;
+    align-items: center;
+}
+
+.contant-list a {
+    display: block;
+    padding: 10px 25px;
+}
+
+.contant-list a:first-child {
+    margin-top: 8px;
+}
+
+.contant-list a:hover {
+    background-color: #f9f9f9;
+}
+
+.contant-list .contant img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.contant-list .contant .contant-name p {
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.contant-list .contant .contant-name span {
+    font-size: 1.3rem;
+    color: #706d6d;
+}
+
+.f-active {
+    position: relative;
+}
+
+.f-active::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #00ff00;
+    border-radius: 50%;
+    position: absolute;
+    left: 42px;
+    bottom: 0px;
+    border: 3px solid #fff;
+}
+
+/* ------- chat-right-col ----- */
+.chat-right-col {
+    flex: 1 1 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chat-container .send-icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #222;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    margin-bottom: 20px;
+}
+
+.chat-container .send-icon i {
+    font-size: 5rem;
+    color: #636262;
+    margin: 0;
+    transform: rotate(15deg);
+}
+
+.chat-container p {
+    font-size: 2rem;
+    color: #555;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.chat-container span {
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: 300;
+}
+
+.chat-container .send-message {
+    margin-top: 20px;
+    background: #00b7ff;
+    border-radius: 5px;
+    padding: 5px 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+
+/* ------------------ New message PopUp box ---------------- */
+
+#new-message-popup {
+    visibility: hidden;
+}
+
+#new-message-popup.message-box-show {
+    visibility: visible;
+}
+
+.edit_box .box-top-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit_box .box-top-head .close-message-box{
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.edit_box .box-top-head h2 {
+    font-size: 1.5rem;
+}
+
+.popup-message-box .box-top-head a {
+    all: unset;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #add8eb;
+    font-weight: 500;
+    transition: .2s linear;
+}
+
+.popup-message-box .box-top-head a:hover {
+    color: #00b7ff;
+}
+
+/* For Search bar  */
+.edit_box .search-contant {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit_box .search-contant h3 {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.edit_box .search-contant input {
+    width: 100%;
+    margin-left: 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+/* sugguested contant */
+
+.edit_box .sugguested-contant {
+    padding: 15px 20px;
+}
+
+.edit_box .sugguested-contant a {
+    padding: 0;
+    border: none;
+    margin-top: 20px;
+}
+
+.edit_box .sugguested-contant .contant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.edit_box .sugguested-contant .contant .label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.edit_box .sugguested-contant .contant .label img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.edit_box .sugguested-contant .contant .label p {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------- CSS for Profile-Page ----------------------------------------- */
+
+.profile-page {
+    background: #f9f9f9 !important;
+    border: none;
+    height: auto;
+    display: block;
+}
+
+/* profile home container */
+
+.profile-top-container {
+    width: 100%;
+    padding: 20px 60px 40px 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-top-container img {
+    width: 150px;
+}
+
+.profile-top-container .profile-contant {
+    margin-left: 100px;
+}
+
+/* name */
+
+.profile-top-container .profile-contant .profile-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-top-container .profile-contant .profile-name h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-right: 15px;
+}
+
+.profile-top-container .profile-contant .profile-name .edit-profile-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.profile-top-container .profile-contant .profile-name .profile-setting {
+    font-size: 2.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+/* followers  */
+
+.profile-top-container .profile-contant .followers {
+    margin-bottom: 10px;
+}
+
+.profile-top-container .profile-contant .followers .follow {
+    font-size: 1.5rem;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.profile-top-container .profile-contant .description {
+    padding: 0;
+}
+
+.profile-top-container .profile-contant .description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.profile-top-container .profile-contant .description .profile-desc {
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+/* --------------- Pop Up setting COntainer styling ----------- */
+
+.setting-container {
+    visibility: hidden;
+}
+
+.setting-container.setting-box-show {
+    visibility: visible;
+}
+
+.setting-box .profile-setting-link {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+
+.setting-box .profile-setting-link:last-child {
+    border: none;
+}
+
+/* ------------------------------ PopUp Follower Container ---------------------  */
+
+.follower-box {
+    height: 250px;
+}
+
+.followers-heading {
+    height: 50px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.followers-heading h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.followers-heading .follower-close-icon {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+/* follower-profile-container  */
+
+.follower-container {
+    visibility: hidden;
+}
+
+.follower-container.follower-container-show {
+    visibility: visible;
+}
+
+.follower-profile-container {
+    text-align: start;
+    padding: 20px;
+    height: calc(250px - 60px);
+    overflow-y: auto;
+}
+
+.follower-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.follower-profile .profile-image {
+    display: flex;
+    align-items: center;
+}
+
+.follower-profile .profile-image img {
+    margin-right: 15px;
+    width: 50px;
+}
+
+.follower-profile .profile-image h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.follower-profile .profile-image span {
+    font-size: 1.3rem;
+    color: #bebebe;
+}
+
+.follower-profile .follower-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 6px;
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.follower-profile .follower-btn.follow {
+    background: #00b7ff;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+
+.followers-suggested-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.see-all-suggestions {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #00b7ff;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* ----------------------------- Following Container PopUp --------------------------- */
+
+.following-container {
+    visibility: hidden;
+}
+
+.following-container.following-container-show {
+    visibility: visible;
+}
+
+.following-box {
+    height: 350px !important;
+}
+
+.following-profile-container {
+    height: calc(350px - 110px);
+}
+
+.following-profile-heading {
+    border-bottom: 1px solid #ccc;
+}
+
+.following-profile-heading .people {
+    font-size: 1.5rem;
+    color: #00b7ff;
+    display: inline-block;
+    width: 45%;
+    cursor: pointer;
+}
+
+.following-profile-heading .people.active {
+    color: #0084ff;
+    border-bottom: 1px solid #000;
+}
+
+
+
+
+
+/* ------------------- Profile Post Constainer --------------------- */
+
+.profile-input {
+    display: none;
+}
+
+.profile-page-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-label {
+    padding: 16px 18px;
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+#post:checked ~ nav .home.nav-label {
+    border-top: 1px solid #000;
+    color: #000;
+}
+
+#reels:checked ~ nav .blog.nav-label {
+    border-top: 1px solid #000;
+    color: #000;
+}
+
+#saved:checked ~ nav .code.nav-label {
+    border-top: 1px solid #000;
+    color: #000;
+}
+
+#tagged:checked ~ nav .help.nav-label {
+    border-top: 1px solid #000;
+    color: #000;
+}
+
+.nav-label .icon {
+    font-size: 1.2rem;
+    padding-right: 7px;
+}
+
+section .content{
+    display: none;
+}
+
+#post:checked ~ section .content-1,
+#reels:checked ~ section .content-2,
+#saved:checked ~ section .content-3,
+#tagged:checked ~ section .content-4{
+    display: block;
+}
+
+/* content section  */
+
+.content-section {
+    margin-bottom: 50px;
+}
+
+.content-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content-box .content-1-image {
+    position: relative;
+    width: 310px;
+    overflow: hidden;
+    height: 310px;
+    cursor: pointer; 
+    transition: .3s linear;
+}
+
+.content-box .content-1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-box .content-1-image .over-lay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    visibility: hidden;
+}
+
+.content-box .content-1-image:hover .over-lay {
+    visibility: visible;
+}
+
+.content-box .content-1-image .over-lay span {
+    font-size: 1.5rem;
+}
+
+.content-box .content-1-image .over-lay span:first-child {
+    margin-right: 30px;
+}
+
+
+.content-box .content-1-image .over-lay span i {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+/* Profile bottoms Link */
+
+.profile-bottom-link {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile-bottom-link .bottom-link {
+    font-size: 1.3rem;
+    color: #c0bebe;
+    margin-right: 10px;
+    transition: .2s linear;
+}
+
+.profile-bottom-link .bottom-link:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+.profile-copyright {
+    margin: 20px 0;
+}
+
+.profile-copyright p {
+    font-size: 1.3rem;
+    color: #c0bebe;
+}
+
+/* content-2 Section */
+
+/* Content-4 Saved Section  */
+
+/* new collection section for saved container  */
+
+.new-collection-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+    z-index: 10000;
+    display: grid;
+    place-items: center;
+}
+
+.new-collection-con {
+    visibility: hidden;
+}
+
+.new-collection-con.new-collection-show {
+    visibility: visible;
+}
+
+.new-collection-container .new-collection-box {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+    text-align: center;
+    position: relative;
+}
+
+.new-collection-container .new-collection-box  .collection-close-btn {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.new-collection-container .new-collection-box .collection-padding {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.new-collection-container .new-collection-box .collection-box-heading h2 {
+    font-weight: 500;
+}
+
+.new-collection-container .new-collection-box .collection-input-box .collection-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: #fafafa;
+    margin: 10px 0;
+}
+
+.new-collection-container .new-collection-box .collection-button {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    color: #00b7ff;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* saved Section */
+
+.profile-saved-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.profile-saved-title p {
+    font-size: 1.2rem;
+    color: #636262;
+}
+
+.profile-saved-title .new-collection {
+    font-size: 1.3rem;
+    color: #00b7ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-saved-box {
+    margin: 10px 0;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.profile-saved-box .bookmark-icons {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.profile-saved-box .bookmark-icons i {
+    font-size: 2.8rem;
+    color: #555;
+}
+
+.profile-saved-box span{
+    display: block;
+    font-size: 2.7rem;
+    color: #555;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.profile-saved-box p {
+    font-size: 1.3rem;
+    color: #000;
+    width: 380px;
+    margin: auto;
+}
+
+
+/* ---------------------------------------------------- Suggested Page Styling ----------------------------------- */
+
+.suggested-home-container {
+    width: 600px !important;
+    margin-top: 150px;
+    display: block;
+}
+
+.suggested-home-box {
+    background: #fff;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.suggested-home-box .suggested-page-btn {
+    background: #00b7ff;
+    color: #fff;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+}
+
+.suggested-home-box small {
+    display: block;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.suggested-home-box .follower-profile:last-child {
+    margin-bottom: 0;
+}
+
+.suggestion-footer-links {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.suggestion-footer-link {
+    margin-bottom: 10px;
+}
+
+.suggestion-footer-links a {
+    font-size: 1.2rem;
+    color: #000;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.suggestion-footer-links a:hover {
+    text-decoration: underline;
+}
+
+.suggestion-footer-links p {
+    margin-top: 8px;
+    font-size: 1.3rem;
+    color: #ccc;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* --------------------------------------- Setting Page Styling --------------------------------- */
+
+.setting-home-container {
+    height: auto !important;
+    margin-bottom: 100px !important;
+}
+
+/* setting left col */
+
+.setting-left-col {
+    width: 240px;
+    border-right: 1px solid #ccc;
+}
+
+.setting-left-col .left-header-box {
+    padding: 15px 10px 15px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.setting-left-col .left-header-box h2 {
+    font-size: 1.7rem;
+}
+
+.setting-left-col .left-header-box h3 {
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+.setting-left-col .left-header-box p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.setting-learn-more-btn {
+    font-size: 1.4rem;
+    color: #00b7ff;
+}
+
+.setting-edit-profile {
+    display: block;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.left-setting-link .setting-links .link {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.left-setting-link .setting-links .link:hover {
+    background: #f9f9f9;
+}
+
+.account-setting {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.account-setting .account-link {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00b7ff;
+    padding: 5px 10px;
+}
+
+.left-bottom {
+    border-bottom: none !important;
+}
+
+.left-bottom .account-center {
+    font-size: 1.6rem !important;
+    font-weight: 700;
+    color: #00b7ff;
+}
+
+.left-bottom .left-account-desc {
+    font-size: 1.1rem !important;
+}
+
+/* setting right col */
+
+.setting-right-col {
+    width: calc(950px - 240px);
+}
+
+.setting-right-col .setting-profile {
+    display: flex;
+    align-items: center;
+    padding: 30px 120px 20px 120px;
+    margin: auto;
+}
+
+.setting-right-col .setting-profile .setting-profile-name {
+    margin-left: 40px;
+}
+
+.setting-right-col .setting-profile p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.setting-right-col .setting-profile .change-profile-photo {
+    font-size: 1.3rem;
+    color: #00b7ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* setting name input  */
+.setting-right-col  .name-input {
+    padding: 0 180px 20px 120px;
+    display: flex;
+}
+
+.setting-right-col  .name-input label {
+    margin-right: 40px;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.setting-right-col  .name-input input {
+    width: 100%;
+    padding: 4px 10px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.setting-right-col  .name-input input:focus {
+    outline: auto;
+}
+
+.setting-right-col  .name-input p {
+    font-size: 1.1rem;
+    color: #c0bebe;
+}
+
+.setting-right-col  .name-input p{
+    margin-bottom: 8px;
+}
+
+/* setting username input */
+
+.setting-right-col .user-name-input {
+    padding: 0 180px 20px 90px !important;
+}
+
+/* setting website input */
+
+.setting-right-col .website-input {
+    padding-left: 104px;
+}
+
+.setting-right-col .website-input input {
+    background: #f0ecec;
+    outline: none !important;
+    cursor: not-allowed;
+}
+
+/* setting Bio input */
+
+.setting-right-col .bio-textarea {
+    padding-left: 144px;
+}
+
+.setting-right-col .bio-textarea textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+.setting-right-col .bio-textarea .word-count {
+    font-size: 1.2rem;
+    color: #c0bebe;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.setting-right-col .bio-textarea h3 {
+    font-size: 1.3rem;
+    color: #c0bebe;
+}
+
+/* setting email input */
+
+.setting-right-col .email-input-field .input-description {
+    width: 100%;
+}
+
+/* setting phone number input */
+
+.setting-right-col .Phone-number-input {
+    padding-left: 41px;
+}
+
+.setting-right-col .Phone-number-input label {
+    width: 180px;
+}
+
+/* setting gender input */
+
+.setting-right-col .gender-input {
+    padding-left: 108px;
+}
+
+/* setting similar account  */
+
+.smilar-account label {
+    text-align: right;
+}
+
+.smilar-account .input-description {
+    display: flex;
+}
+
+.smilar-account .input-description input {
+    width: 20px !important;
+    margin-right: 10px;
+}
+
+.smilar-account .input-description .checkbox {
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 600;
+}
+
+/* setting submit button */
+
+.setting-submit-button {
+    padding: 20px 120px 0 200px;
+}
+
+.setting-submit-button .submit {
+    background: #00b7ff;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.setting-submit-button .dactivate {
+    font-size: 1.3rem;
+    color: #00b7ff;
+    font-weight: 600;
+    cursor: pointer;
+}

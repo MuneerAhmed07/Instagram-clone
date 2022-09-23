@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header chat-header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="title">ChatMe</h1>
+            </a>
+            <button class="logo-btn"><i class="fas fa-angle-down"></i></button>
+            <div class="more-link">
+                <a href="#"><i class="far fa-user"></i>Following</a>
+                <a href="#"><i class="far fa-star"></i>Favorites</a>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search">
+            <label for="search-box"><i class="fas fa-search search-icon"></i></label>
+            <input type="search" class="search-input" id="search-box" placeholder="Search">
+        </div>
+        <!-- Nav Icons -->
+        <nav class="nav-icons">
+            <a href="index.html" class="navbar-icon"><i class="fas fa-home-alt nav-links"></i></a>
+            <a href="chat.html" class="navbar-icon on-page"><i class="fab fa-facebook-messenger nav-links"></i></a>
+            <div class="navbar-icon new-post-icon"><i class="far fa-square-plus nav-links"></i></div>
+            <a href="#" class="navbar-icon"><i class="far fa-compass nav-links"></i></a>
+            <div class="navbar-icon">
+                <i class="far fa-heart nav-links  heart-icon"></i>
+                <!-- Heart PopUp box -->
+                <div class="heart-popup-box chat-heart-popup">
+                    <h2>This Month</h2>
+
+                    <!-- like One -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-12.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-4.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Two -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-2.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-3.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- like three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-3.png" alt="like-profile">
+                                <p><strong>Edward_rebort</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-7.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-6.png" alt="like-profile">
+                                <p><strong>Charlotte_Evelyn</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-2.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Four -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-8.png" alt="like-profile">
+                                <p><strong>rack-dov</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-1.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+            <div>
+                <img src="images/Profile/profile-1.png" alt="user-profile" class="main-profile">
+                <!-- Profile PopUp box -->
+                <div class="pop-box chat-profile-box">
+                    <a href="profile-page.html"><i class="fas fa-user"></i>Profile</a>
+                    <a href="#"><i class="far fa-bookmark"></i>Saved</a>
+                    <a href="settings.html"><i class="fas fa-gear"></i>Settings</a>
+                    <a href="#"><i class="fas fa-repeat"></i>Switch accounts</a>
+                    <hr>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Upload a new post section -->
+
+    <div class="edit-box-container" id="share-new-post">
+        <i class="fas fa-times close-button"></i>
+        <div class="edit_box share-file-box">
+            <h3>Create new post</h3>
+            <div class="upload-new-post">
+                <i class="fas fa-cloud-arrow-up"></i>
+                <p>Drag photos and videos here</p>
+            </div>
+            <label for="upload-file">Select from computer</label>
+            <input type="file" name="" id="upload-file">
+        </div>
+    </div>
+
+    <!-- setting Pop-up Section -->
+
+    <div class="new-collection-container setting-container">
+        <div class="new-collection-box setting-box">
+            <a href="#" class="profile-setting-link">Change password</a>
+            <a href="#" class="profile-setting-link">QR Code</a>
+            <a href="#" class="profile-setting-link">Apps and Websites</a>
+            <a href="#" class="profile-setting-link">Notifications</a>
+            <a href="#" class="profile-setting-link">Privacy and security</a>
+            <a href="#" class="profile-setting-link">Supervision</a>
+            <a href="#" class="profile-setting-link">Login activity</a>
+            <a href="#" class="profile-setting-link">Email from Instagram</a>
+            <a href="#" class="profile-setting-link">Report a Problem</a>
+            <a href="#" class="profile-setting-link">Embed</a>
+            <a href="#" class="profile-setting-link">Log Out</a>
+            <a href="#" class="profile-setting-link setting-box-hide">Cancel</a>
+        </div>
+    </div>
+
+    <!-- Follower Popup Container -->
+
+    <div class="new-collection-container follower-container">
+        <div class="new-collection-box follower-box">
+            <!-- Follower Heading -->
+            <div class="followers-heading">
+                <h2>Followers</h2>
+                <i class="fas fa-times follower-close-icon"></i>
+            </div>
+            <!-- Follower Profile -->
+            <div class="follower-profile-container">
+                <!-- profile-1 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-2.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Amelia</h2>
+                            <span>AmeliaRoya</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn">Remove</button>
+                </div>
+                <!-- profile-2 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-4.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Camila_Luna</h2>
+                            <span>camila</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn">Remove</button>
+                </div>
+
+                <h2 class="followers-suggested-heading">Suggestions For You</h2>
+
+                <!-- profile-3 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-3.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Edward_rebort</h2>
+                            <span>HoneyLicer</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn follow">Follow</button>
+                </div>
+                <!-- profile-4 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-6.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Camila_Luna</h2>
+                            <span>camila</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn follow">Follow</button>
+                </div>
+                <!-- profile-5 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-9.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Camila_Luna</h2>
+                            <span>camila</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn follow">Follow</button>
+                </div>
+
+                <a href="suggested.html" class="see-all-suggestions">See All Suggestions</a>
+ 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Following Popup Container -->
+
+    <div class="new-collection-container following-container">
+        <div class="new-collection-box follower-box following-box">
+            <!-- Follower Heading -->
+            <div class="followers-heading">
+                <h2>Followers</h2>
+                <i class="fas fa-times follower-close-icon following-close-btn"></i>
+            </div>
+            <!-- Profile-heading -->
+            <div class="following-profile-heading">
+                <span class="people active">People</span>
+                <span class="people">Hashtags</span>
+            </div>
+            <!-- Follower Profile -->
+            <div class="follower-profile-container following-profile-container">
+                <!-- profile-1 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-2.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Amelia</h2>
+                            <span>AmeliaRoya</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn">Following</button>
+                </div>
+                <!-- profile-2 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-4.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Camila_Luna</h2>
+                            <span>camila</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn">Following</button>
+                </div>
+
+                <h2 class="followers-suggested-heading">Suggestions For You</h2>
+
+                <!-- profile-3 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-3.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Edward_rebort</h2>
+                            <span>HoneyLicer</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn follow">Follow</button>
+                </div>
+                <!-- profile-4 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-6.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Camila_Luna</h2>
+                            <span>camila</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn follow">Follow</button>
+                </div>
+                <!-- profile-5 -->
+                <div class="follower-profile">
+                    <div class="profile-image">
+                        <img src="images/Profile/profile-9.png" alt="profile-1">
+                        <div class="name">
+                            <h2>Camila_Luna</h2>
+                            <span>camila</span>
+                        </div>
+                    </div>
+                    <button class="follower-btn follow">Follow</button>
+                </div>
+
+                <a href="suggested.html" class="see-all-suggestions">See All Suggestions</a>
+ 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- profile home container -->
+    <section class="home-container chat-home-container profile-page">
+
+        <!-- Profile Top Section -->
+        <div class="profile-top-container">
+            <img src="images/Profile/profile-1.png" alt="profile-image">
+            <!-- profile-contant -->
+            <div class="profile-contant">
+                <div class="profile-name">
+                    <h1>Secret_wisher</h1>
+                    <a href="settings.html" class="edit-profile-btn">Edit profile</a>
+                    <i class="fas fa-gear profile-setting"></i>
+                </div>
+                <div class="followers">
+                    <span class="follow"><strong>8</strong> Posts </span>
+                    <span class="follow follower"><strong>128k</strong> followers </span>
+                    <span class="follow following"><strong>540</strong> followeing </span>
+                </div>
+                <div class="description">
+                    <h2>Web Developer</h2>
+                    <span class="profile-desc">🧒 Self-Taught</span>
+                    <span class="profile-desc">😇 Think | Design | Code</span>
+                    <span class="profile-desc">🔥 Follow For Daily Content</span>
+                    <span class="profile-desc">📩 DM For Collaboration / Inquiries</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post Section -->
+
+        <div class="profile-post-container">
+
+            <div class="wrapper">
+                <input type="radio" class="profile-input" name="slider" id="post" checked>
+                <input type="radio" class="profile-input" name="slider" id="reels">
+                <input type="radio" class="profile-input" name="slider" id="saved">
+                <input type="radio" class="profile-input" name="slider" id="tagged">
+                <nav class="profile-page-navbar">
+                    <label for="post" class="home nav-label"><i class="fas fa-table-cells icon"></i>POSTS</label>
+                    <label for="reels" class="blog nav-label"><i class="fas fa-film icon"></i>REELS</label>
+                    <label for="saved" class="code nav-label"><i class="fas fa-bookmark icon"></i>SAVED</label>
+                    <label for="tagged" class="help nav-label"><i class="fas fa-id-card-clip icon"></i>TAGGED</label>
+                </nav>
+
+                <!-- content section -->
+                <section class="content-section">
+                    <!-- content-1 -->
+                    <div class="content content-1">
+                        <div class="content-box">
+                            <div class="content-1-image">
+                                <img src="images/post/post-1.png" alt="post-image">
+                                <div class="over-lay">
+                                    <span><i class="fas fa-heart"></i>18</span>
+                                    <span><i class="fas fa-comment"></i>5</span>
+                                </div>
+                            </div>
+                            <div class="content-1-image">
+                                <img src="images/post/post-2.png" alt="post-image">
+                                <div class="over-lay">
+                                    <span><i class="fas fa-heart"></i>18</span>
+                                    <span><i class="fas fa-comment"></i>5</span>
+                                </div>
+                            </div>
+                            <div class="content-1-image">
+                                <img src="images/post/post-3.png" alt="post-image">
+                                <div class="over-lay">
+                                    <span><i class="fas fa-heart"></i>18</span>
+                                    <span><i class="fas fa-comment"></i>5</span>
+                                </div>
+                            </div>
+                            <div class="content-1-image">
+                                <img src="images/post/post-4.png" alt="post-image">
+                                <div class="over-lay">
+                                    <span><i class="fas fa-heart"></i>18</span>
+                                    <span><i class="fas fa-comment"></i>5</span>
+                                </div>
+                            </div>
+                            <div class="content-1-image">
+                                <img src="images/post/post-4.png" alt="post-image">
+                                <div class="over-lay">
+                                    <span><i class="fas fa-heart"></i>18</span>
+                                    <span><i class="fas fa-comment"></i>5</span>
+                                </div>
+                            </div>
+                            <div class="content-1-image">
+                                <img src="images/post/post-6.png" alt="post-image">
+                                <div class="over-lay">
+                                    <span><i class="fas fa-heart"></i>18</span>
+                                    <span><i class="fas fa-comment"></i>5</span>
+                                </div>
+                            </div>
+                            <div class="content-1-image">
+                                <img src="images/post/post-7.png" alt="post-image">
+                                <div class="over-lay">
+                                    <span><i class="fas fa-heart"></i>18</span>
+                                    <span><i class="fas fa-comment"></i>5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- links -->
+                        <div class="profile-bottom-link">
+                            <a href="#" class="bottom-link">Honey</a>
+                            <a href="#" class="bottom-link">About</a>
+                            <a href="#" class="bottom-link">Blog</a>
+                            <a href="#" class="bottom-link">Jobs</a>
+                            <a href="#" class="bottom-link">Help</a>
+                            <a href="#" class="bottom-link">API</a>
+                            <a href="#" class="bottom-link">Privacy</a>
+                            <a href="#" class="bottom-link">Terms</a>
+                            <a href="#" class="bottom-link">Top Accounts</a>
+                            <a href="#" class="bottom-link">Hashtags</a>
+                            <a href="#" class="bottom-link">Location</a>
+                            <a href="#" class="bottom-link">Instagram Lite</a>
+                            <a href="#" class="bottom-link">Contact Uploading & Non-Users</a>
+                            <div class="profile-copyright">
+                                <p>&copy; 2022 Instagram From Meta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -2 box -->
+                    <div class="content content-2">
+
+
+                        <!-- links -->
+                        <div class="profile-bottom-link">
+                            <a href="#" class="bottom-link">Honey</a>
+                            <a href="#" class="bottom-link">About</a>
+                            <a href="#" class="bottom-link">Blog</a>
+                            <a href="#" class="bottom-link">Jobs</a>
+                            <a href="#" class="bottom-link">Help</a>
+                            <a href="#" class="bottom-link">API</a>
+                            <a href="#" class="bottom-link">Privacy</a>
+                            <a href="#" class="bottom-link">Terms</a>
+                            <a href="#" class="bottom-link">Top Accounts</a>
+                            <a href="#" class="bottom-link">Hashtags</a>
+                            <a href="#" class="bottom-link">Location</a>
+                            <a href="#" class="bottom-link">Instagram Lite</a>
+                            <a href="#" class="bottom-link">Contact Uploading & Non-Users</a>
+                            <div class="profile-copyright">
+                                <p>&copy; 2022 Instagram From Meta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content-3 box -->
+                    <div class="content content-3" id="saved">
+                        <div class="profile-saved-title">
+                            <p>Only you can see what you've saved</p>
+                            <span class="new-collection">+ New Collection</span>
+                        </div>
+
+                        <div class="profile-saved-box">
+                            <div class="bookmark-icons"><i class="far fa-bookmark"></i></div>
+                            <div class="profile-box-desc">
+                                <span>Save</span>
+                                <p>Save photos and videos that you want to see again. No one is notified, and only you
+                                    can see what you've saved.</p>
+                            </div>
+                        </div>
+
+                        <!-- links -->
+                        <div class="profile-bottom-link">
+                            <a href="#" class="bottom-link">Honey</a>
+                            <a href="#" class="bottom-link">About</a>
+                            <a href="#" class="bottom-link">Blog</a>
+                            <a href="#" class="bottom-link">Jobs</a>
+                            <a href="#" class="bottom-link">Help</a>
+                            <a href="#" class="bottom-link">API</a>
+                            <a href="#" class="bottom-link">Privacy</a>
+                            <a href="#" class="bottom-link">Terms</a>
+                            <a href="#" class="bottom-link">Top Accounts</a>
+                            <a href="#" class="bottom-link">Hashtags</a>
+                            <a href="#" class="bottom-link">Location</a>
+                            <a href="#" class="bottom-link">Instagram Lite</a>
+                            <a href="#" class="bottom-link">Contact Uploading & Non-Users</a>
+                            <div class="profile-copyright">
+                                <p>&copy; 2022 Instagram From Meta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content-4 Box -->
+                    <div class="content content-4">
+
+                        <div class="profile-saved-box">
+                            <div class="bookmark-icons"><i class="fas fa-id-card-clip"></i></div>
+                            <div class="profile-box-desc">
+                                <span>Photos of you</span>
+                                <p>When people tag you in photos, they'll appear here.</p>
+                            </div>
+                        </div>
+
+                        <!-- links -->
+                        <div class="profile-bottom-link">
+                            <a href="#" class="bottom-link">Honey</a>
+                            <a href="#" class="bottom-link">About</a>
+                            <a href="#" class="bottom-link">Blog</a>
+                            <a href="#" class="bottom-link">Jobs</a>
+                            <a href="#" class="bottom-link">Help</a>
+                            <a href="#" class="bottom-link">API</a>
+                            <a href="#" class="bottom-link">Privacy</a>
+                            <a href="#" class="bottom-link">Terms</a>
+                            <a href="#" class="bottom-link">Top Accounts</a>
+                            <a href="#" class="bottom-link">Hashtags</a>
+                            <a href="#" class="bottom-link">Location</a>
+                            <a href="#" class="bottom-link">Instagram Lite</a>
+                            <a href="#" class="bottom-link">Contact Uploading & Non-Users</a>
+                            <div class="profile-copyright">
+                                <p>&copy; 2022 Instagram From Meta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- New Collection Section  -->
+
+    <div class="new-collection-container new-collection-con">
+        <div class="new-collection-box">
+            <i class="fas fa-times collection-close-btn"></i>
+            <div class="collection-box-heading collection-padding">
+                <h2>New Collection</h2>
+            </div>
+            <div class="collection-input-box collection-padding">
+                <input type="search" placeholder="Collection name" class="collection-input">
+            </div>
+            <button class="collection-button">Next</button>
+        </div>
+    </div>
+
+
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+
+        // For New Collection container 
+        const newCollection = document.querySelector(".new-collection");
+        const newCollectionBox = document.querySelector(".new-collection-con");
+        const collectionCloseBtn = document.querySelector(".collection-close-btn");
+        // For PopUp Setting container
+        const settingBox = document.querySelector(".setting-container");
+        const settingIcon = document.querySelector(".profile-setting");
+        const settingBoxClose = document.querySelector(".setting-box-hide");
+        // For Follower container 
+        const followerBtn = document.querySelector(".follower");
+        const followerContainer = document.querySelector(".follower-container")
+        const followerCloseBtn = document.querySelector(".follower-close-icon");
+        // For Following Container 
+        const followingBtn = document.querySelector(".following");
+        const followingContainer = document.querySelector(".following-container");
+        const followingCloseBtn = document.querySelector(".following-close-btn");
+
+        // For New Section Container
+        newCollection.addEventListener("click", () => {
+            newCollectionBox.classList.add("new-collection-show");
+        });
+
+        collectionCloseBtn.addEventListener("click", () => {
+            newCollectionBox.classList.remove("new-collection-show");
+        });
+
+        // For Setting Container
+        settingIcon.addEventListener("click", () => {
+            settingBox.classList.add("setting-box-show");
+        });
+
+        settingBoxClose.addEventListener("click", () => {
+            settingBox.classList.remove("setting-box-show");
+        });
+
+        // For Follower Container
+        followerBtn.addEventListener("click", () => {
+            followerContainer.classList.add("follower-container-show");
+        });
+
+        followerCloseBtn.addEventListener("click", () => {
+            followerContainer.classList.remove("follower-container-show");
+        });
+
+        // For Following Container
+        followingBtn.addEventListener("click", () => {
+            followingContainer.classList.add("following-container-show");
+        });
+
+        followingCloseBtn.addEventListener("click", () => {
+            followingContainer.classList.remove("following-container-show");
+        });
+
+    </script>
+
+</body>
+
+</html>

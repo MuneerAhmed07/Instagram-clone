@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html"><h1 class="title">ChatMe</h1></a>
+            <button class="logo-btn"><i class="fas fa-angle-down"></i></button>
+            <div class="more-link">
+                <a href="#"><i class="far fa-user"></i>Following</a>
+                <a href="#"><i class="far fa-star"></i>Favorites</a>
+            </div>
+        </div>
+        <!-- search bar -->
+        <div class="search">
+            <label for="search-box"><i class="fas fa-search search-icon"></i></label>
+            <input type="search" class="search-input" id="search-box" placeholder="Search">
+        </div>
+        <!-- nav icons -->
+        <nav class="nav-icons">
+            <a href="index.html" class="on-page navbar-icon"><i class="fas fa-home-alt nav-links"></i></a>
+            <a href="chat.html" class="navbar-icon"><i class="fab fa-facebook-messenger nav-links"></i></a>
+            <div class="navbar-icon new-post-icon"><i class="far fa-square-plus nav-links"></i></div>
+            <a href="#" class="navbar-icon"><i class="far fa-compass nav-links"></i></a>
+            <div class="navbar-icon">
+                <i class="far fa-heart nav-links  heart-icon"></i>
+                <!-- Heart PopUp box -->
+                <div class="heart-popup-box">
+                    <h2>This Month</h2>
+
+                    <!-- like One -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-12.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-4.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Two -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-2.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-3.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- like three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-3.png" alt="like-profile">
+                                <p><strong>Edward_rebort</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-7.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-6.png" alt="like-profile">
+                                <p><strong>Charlotte_Evelyn</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-2.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Four -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-8.png" alt="like-profile">
+                                <p><strong>rack-dov</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-1.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+            <div>
+                <img src="images/Profile/profile-1.png" alt="user-profile" class="main-profile">
+                <!-- Profile PopUp box -->
+                <div class="pop-box">
+                    <a href="profile-page.html"><i class="fas fa-user"></i>Profile</a>
+                    <a href="#"><i class="far fa-bookmark"></i>Saved</a>
+                    <a href="settings.html"><i class="fas fa-gear"></i>Settings</a>
+                    <a href="#"><i class="fas fa-repeat"></i>Switch accounts</a>
+                    <hr>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Upload a new post section -->
+
+    <div class="edit-box-container" id="share-new-post">
+        <i class="fas fa-times close-button"></i>
+        <div class="edit_box share-file-box">
+            <h3>Create new post</h3>
+            <div class="upload-new-post">
+                <i class="fas fa-cloud-arrow-up"></i>
+                <p>Drag photos and videos here</p>
+            </div>
+            <label for="upload-file">Select from computer</label>
+            <input type="file" name="" id="upload-file">
+        </div>
+    </div>
+
+    <!-- Post Edit option tab start -->
+
+    <div class="edit-box-container" id="edit">
+        <div class="edit_box">
+            <a href="#">Delete</a>
+            <a href="#">Edit</a>
+            <a href="#">Hide like count</a>
+            <a href="#">Turn off commenting</a>
+            <a href="#">Go to post</a>
+            <a href="#">share to...</a>
+            <a href="#">Copy Link</a>
+            <a href="#">Embed</a>
+            <button class="cancel">cancel</button>
+        </div>
+    </div>
+
+    <!-- Post Edit option tab end -->
+
+
+    <section class="home-container">
+
+        <!-- left column -->
+        <div class="left-col">
+
+            <!-- post one  -->
+
+            <div class="post">
+                <div class="profile-title">
+                    <div class="image">
+                        <a href="profile-page.html" class="post-profile-link">
+                            <img src="images/Profile/profile-1.png" alt="user-profile" class="post-profile-img">
+                        </a>
+                        <a href="profile-page.html">
+                            <div class="name">
+                                <h3>Secret_wisher</h3>
+                            </div>
+                        </a>                        
+
+                    </div>
+                    <div class="post-edit-icon edit-icon"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+                <div class="post-image">
+                    <img src="images/post/post-6.png" alt="post-1">
+                </div>
+                <div class="share-icons">
+                    <div class="share">
+                        <a href="#" class="link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="link"><i class="far fa-comment"></i></a>
+                        <a href="#" class="link"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                    <div class="save">
+                        <a href="#" class="link"><i class="far fa-bookmark"></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="like">Be the first to <strong>like this</strong></p>
+                    <p class="post-title"><strong>Secret_wisher</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#">more</a></p>
+                    <span class="time">3 MIN AGO</span>
+                </div>
+                <div class="comment-box">
+                    <span>😊</span>
+                    <textarea name="" id="" cols="50" rows="1" placeholder="Add a comment..."></textarea>
+                    <a href="#" class="post-btn">Post</a>
+                </div>
+            </div>
+
+            <!-- post two  -->
+
+            <div class="post">
+                <div class="profile-title">
+                    <div class="image">
+                        <a href="profile-page.html" class="post-profile-link">
+                            <img src="images/Profile/profile-1.png" alt="user-profile" class="post-profile-img">
+                        </a>
+                        <a href="profile-page.html">
+                            <div class="name">
+                                <h3>Secret_wisher</h3>
+                            </div>
+                        </a>                        
+
+                    </div>
+                    <div class="post-edit-icon edit-icon"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+                <div class="post-image">
+                    <img src="images/post/post-7.png" alt="post-1">
+                </div>
+                <div class="share-icons">
+                    <div class="share">
+                        <a href="#" class="link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="link"><i class="far fa-comment"></i></a>
+                        <a href="#" class="link"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                    <div class="save">
+                        <a href="#" class="link"><i class="far fa-bookmark"></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="like-by">
+                        <a href="#" class="f-like"><img src="images/Profile/profile-6.png" alt="profile"></a>
+                        <p class="f-like-desc">Like by <strong>Charlotte_Evelyn</strong> and <strong>20 other</strong></p>
+                    </div>
+                    <p class="post-title"><strong>Secret_wisher</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#">more</a></p>
+                    <a href="#" class="show-comment">View all 15 comments</a>
+                    <span class="time">1 DAY AGO</span>
+                </div>
+                <div class="comment-box">
+                    <span>😊</span>
+                    <textarea name="" id="" cols="50" rows="1" placeholder="Add a comment..."></textarea>
+                    <a href="#" class="post-btn">Post</a>
+                </div>
+            </div>
+
+            <!-- suggested people slide -->
+
+            <div class="post">
+
+                <div class="suggested-heading">
+                    <h2>Suggestions for you</h2>
+                    <a href="suggested.html" class="see">See All</a>
+                </div>
+
+                <!-- proflie box  -->
+
+                <div class="box">
+
+                    <!-- profile-1  -->
+                    <div class="box-profile">
+                        <img src="images/Profile/profile-6.png" alt="profile">
+                        <div class="name">
+                            <h3>Charlotte_Evelyn</h3>
+                            <span>Popular</span>
+                        </div>
+                        <a href="#" class="slide-btn">Follow</a>
+                    </div>
+
+                    <!-- profile-2 -->
+                    <div class="box-profile">
+                        <img src="images/Profile/profile-2.png" alt="profile">
+                        <div class="name">
+                            <h3>Amelia</h3>
+                            <span>Popular</span>
+                        </div>
+                        <a href="#" class="slide-btn">Follow</a>
+                    </div>
+
+                    <!-- profile-3  -->
+                    <div class="box-profile">
+                        <img src="images/Profile/profile-8.png" alt="profile">
+                        <div class="name">
+                            <h3>rack-dov</h3>
+                            <span>Popular</span>
+                        </div>
+                        <a href="#" class="slide-btn">Follow</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- post Three -->
+
+            <div class="post">
+                <div class="profile-title">
+                    <div class="image">
+                        <a href="profile-page.html" class="post-profile-link">
+                            <img src="images/Profile/profile-1.png" alt="user-profile" class="post-profile-img">
+                        </a>
+                        <a href="profile-page.html">
+                            <div class="name">
+                                <h3>Secret_wisher</h3>
+                            </div>
+                        </a>                        
+
+                    </div>
+                    <div class="post-edit-icon edit-icon"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+                <div class="post-image">
+                    <img src="images/post/post-1.png" alt="post-1">
+                </div>
+                <div class="share-icons">
+                    <div class="share">
+                        <a href="#" class="link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="link"><i class="far fa-comment"></i></a>
+                        <a href="#" class="link"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                    <div class="save">
+                        <a href="#" class="link"><i class="far fa-bookmark"></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="like-by">
+                        <a href="#" class="f-like"><img src="images/Profile/profile-4.png" alt="profile"></a>
+                        <p class="f-like-desc">Like by <strong>Camila_Luna</strong> and <strong>40 other</strong></p>
+                    </div>
+                    <p class="post-title"><strong>Secret_wisher</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#">more</a></p>
+                    <a href="#" class="show-comment">View all 35 comments</a>
+                    <span class="time">7 DAY AGO</span>
+                </div>
+                <div class="comment-box">
+                    <span>😊</span>
+                    <textarea name="" id="" cols="50" rows="1" placeholder="Add a comment..."></textarea>
+                    <a href="#" class="post-btn">Post</a>
+                </div>
+            </div>
+
+            <!-- post Four -->
+
+            <div class="post">
+                <div class="profile-title">
+                    <div class="image">
+                        <a href="profile-page.html" class="post-profile-link">
+                            <img src="images/Profile/profile-1.png" alt="user-profile" class="post-profile-img">
+                        </a>
+                        <a href="profile-page.html">
+                            <div class="name">
+                                <h3>Secret_wisher</h3>
+                            </div>
+                        </a>                        
+
+                    </div>
+                    <div class="post-edit-icon edit-icon"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+                <div class="post-image">
+                    <img src="images/post/post-2.png" alt="post-1">
+                </div>
+                <div class="share-icons">
+                    <div class="share">
+                        <a href="#" class="link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="link"><i class="far fa-comment"></i></a>
+                        <a href="#" class="link"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                    <div class="save">
+                        <a href="#" class="link"><i class="far fa-bookmark"></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="like-by">
+                        <a href="#" class="f-like"><img src="images/Profile/profile-4.png" alt="profile"></a>
+                        <p class="f-like-desc">Like by <strong>Camila_Luna</strong> and <strong>40 other</strong></p>
+                    </div>
+                    <p class="post-title"><strong>Secret_wisher</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#">more</a></p>
+                    <a href="#" class="show-comment">View all 35 comments</a>
+                    <span class="time">7 DAY AGO</span>
+                </div>
+                <div class="comment-box">
+                    <span>😊</span>
+                    <textarea name="" id="" cols="50" rows="1" placeholder="Add a comment..."></textarea>
+                    <a href="#" class="post-btn">Post</a>
+                </div>
+            </div>
+
+            <!-- post Five -->
+
+            <div class="post">
+                <div class="profile-title">
+                    <div class="image">
+                        <a href="profile-page.html" class="post-profile-link">
+                            <img src="images/Profile/profile-1.png" alt="user-profile" class="post-profile-img">
+                        </a>
+                        <a href="profile-page.html">
+                            <div class="name">
+                                <h3>Secret_wisher</h3>
+                            </div>
+                        </a>                        
+
+                    </div>
+                    <div class="post-edit-icon edit-icon"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+                <div class="post-image">
+                    <img src="images/post/post-3.png" alt="post-1">
+                </div>
+                <div class="share-icons">
+                    <div class="share">
+                        <a href="#" class="link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="link"><i class="far fa-comment"></i></a>
+                        <a href="#" class="link"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                    <div class="save">
+                        <a href="#" class="link"><i class="far fa-bookmark"></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="like-by">
+                        <a href="#" class="f-like"><img src="images/Profile/profile-4.png" alt="profile"></a>
+                        <p class="f-like-desc">Like by <strong>Camila_Luna</strong> and <strong>40 other</strong></p>
+                    </div>
+                    <p class="post-title"><strong>Secret_wisher</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#">more</a></p>
+                    <a href="#" class="show-comment">View all 35 comments</a>
+                    <span class="time">7 DAY AGO</span>
+                </div>
+                <div class="comment-box">
+                    <span>😊</span>
+                    <textarea name="" id="" cols="50" rows="1" placeholder="Add a comment..."></textarea>
+                    <a href="#" class="post-btn">Post</a>
+                </div>
+            </div>
+
+            <!-- post six -->
+
+            <div class="post">
+                <div class="profile-title">
+                    <div class="image">
+                        <a href="profile-page.html" class="post-profile-link">
+                            <img src="images/Profile/profile-1.png" alt="user-profile" class="post-profile-img">
+                        </a>
+                        <a href="profile-page.html">
+                            <div class="name">
+                                <h3>Secret_wisher</h3>
+                            </div>
+                        </a>                        
+
+                    </div>
+                    <div class="post-edit-icon edit-icon"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+                <div class="post-image">
+                    <img src="images/post/post-4.png" alt="post-1">
+                </div>
+                <div class="share-icons">
+                    <div class="share">
+                        <a href="#" class="link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="link"><i class="far fa-comment"></i></a>
+                        <a href="#" class="link"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                    <div class="save">
+                        <a href="#" class="link"><i class="far fa-bookmark"></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="like-by">
+                        <a href="#" class="f-like"><img src="images/Profile/profile-4.png" alt="profile"></a>
+                        <p class="f-like-desc">Like by <strong>Camila_Luna</strong> and <strong>40 other</strong></p>
+                    </div>
+                    <p class="post-title"><strong>Secret_wisher</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#">more</a></p>
+                    <a href="#" class="show-comment">View all 35 comments</a>
+                    <span class="time">7 DAY AGO</span>
+                </div>
+                <div class="comment-box">
+                    <span>😊</span>
+                    <textarea name="" id="" cols="50" rows="1" placeholder="Add a comment..."></textarea>
+                    <a href="#" class="post-btn">Post</a>
+                </div>
+            </div>
+
+            <!-- post seven -->
+
+            <div class="post">
+                <div class="profile-title">
+                    <div class="image">
+                        <a href="profile-page.html" class="post-profile-link">
+                            <img src="images/Profile/profile-1.png" alt="user-profile" class="post-profile-img">
+                        </a>
+                        <a href="profile-page.html">
+                            <div class="name">
+                                <h3>Secret_wisher</h3>
+                            </div>
+                        </a>                        
+
+                    </div>
+                    <div class="post-edit-icon edit-icon"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+                <div class="post-image">
+                    <img src="images/post/post-5.png" alt="post-1">
+                </div>
+                <div class="share-icons">
+                    <div class="share">
+                        <a href="#" class="link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="link"><i class="far fa-comment"></i></a>
+                        <a href="#" class="link"><i class="far fa-paper-plane"></i></a>
+                    </div>
+                    <div class="save">
+                        <a href="#" class="link"><i class="far fa-bookmark"></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="like-by">
+                        <a href="#" class="f-like"><img src="images/Profile/profile-4.png" alt="profile"></a>
+                        <p class="f-like-desc">Like by <strong>Camila_Luna</strong> and <strong>40 other</strong></p>
+                    </div>
+                    <p class="post-title"><strong>Secret_wisher</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit...<a href="#">more</a></p>
+                    <a href="#" class="show-comment">View all 35 comments</a>
+                    <span class="time">7 DAY AGO</span>
+                </div>
+                <div class="comment-box">
+                    <span>😊</span>
+                    <textarea name="" id="" cols="50" rows="1" placeholder="Add a comment..."></textarea>
+                    <a href="#" class="post-btn">Post</a>
+                </div>
+            </div>
+
+            <!-- sugguested profile -->
+
+            <div class="post">
+
+                <div class="suggested-heading">
+                    <h2>Suggestions for you</h2>
+                    <a href="suggested.html" class="see">See All</a>
+                </div>
+
+                <!-- proflie box  -->
+
+                <div class="box">
+
+                    <!-- profile-1  -->
+                    <div class="box-profile">
+                        <img src="images/Profile/profile-9.png" alt="profile">
+                        <div class="name">
+                            <h3>Rebort-bohran</h3>
+                            <span>Popular</span>
+                        </div>
+                        <a href="#" class="slide-btn">Follow</a>
+                    </div>
+
+                    <!-- profile-2 -->
+                    <div class="box-profile">
+                        <img src="images/Profile/profile-10.png" alt="profile">
+                        <div class="name">
+                            <h3>Jhon-015</h3>
+                            <span>Popular</span>
+                        </div>
+                        <a href="#" class="slide-btn">Follow</a>
+                    </div>
+
+                    <!-- profile-3  -->
+                    <div class="box-profile">
+                        <img src="images/Profile/profile-11.png" alt="profile">
+                        <div class="name">
+                            <h3>Angelina</h3>
+                            <span>Popular</span>
+                        </div>
+                        <a href="#" class="slide-btn">Follow</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-col">
+
+            <!-- main profile  -->
+            <div class="profile-section">
+                <div class="right-profile-image">
+                    <a href="profile-page.html"><img src="images/Profile/profile-1.png" alt="user-profile-image"></a>
+                    <a href="profile-page.html">
+                        <div class="name">
+                            <h3>Secret_wisher</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="switch">Switch</a>
+            </div>
+
+            <!-- new Friend section -->
+
+            <div class="new-friends">
+
+                <div class="suggestion-title">
+                    <h2>Suggestions For You</h2>
+                    <a href="suggested.html" class="see-all">See All</a>
+                </div>
+
+                <!-- New People  -->
+                <div class="people">
+
+                    <!-- profile-1  -->
+                    <div class="people-profile">
+                        <div class="peo-image">
+                            <a href="#" class="people-image">
+                                <img src="images/Profile/profile-2.png" alt="profile-image">
+                            </a>
+                            <a href="#">
+                                <div class="name">
+                                    <h3>Amelia</h3>
+                                    <span>sgguested for you</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="switch">Follow</a>
+                    </div>
+
+                    <!-- profile-2 -->
+                    <div class="people-profile">
+                        <div class="peo-image">
+                            <a href="#" class="people-image">
+                                <img src="images/Profile/profile-3.png" alt="profile-image">
+                            </a>
+                            <a href="#">
+                                <div class="name">
+                                    <h3>Edward_rebort</h3>
+                                    <span>sgguested for you</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="switch">Follow</a>
+                    </div>
+
+                    <!-- profile-3 -->
+                    <div class="people-profile">
+                        <div class="peo-image">
+                            <a href="#" class="people-image">
+                                <img src="images/Profile/profile-4.png" alt="profile-image">
+                            </a>
+                            <a href="#">
+                                <div class="name">
+                                    <h3>Camila_Luna</h3>
+                                    <span>sgguested for you</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="switch">Follow</a>
+                    </div>
+
+                    <!-- profile-4 -->
+                    <div class="people-profile">
+                        <div class="peo-image">
+                            <a href="#" class="people-image">
+                                <img src="images/Profile/profile-5.png" alt="profile-image">
+                            </a>
+                            <a href="#">
+                                <div class="name">
+                                    <h3>Liam.Oliver-01</h3>
+                                    <span>sgguested for you</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="switch">Follow</a>
+                    </div>
+
+                    <!-- profile-5 -->
+                    <div class="people-profile">
+                        <div class="peo-image">
+                            <a href="#" class="people-image">
+                                <img src="images/Profile/profile-6.png" alt="profile-image">
+                            </a>
+                            <a href="#">
+                                <div class="name">
+                                    <h3>Charlotte_Evelyn</h3>
+                                    <span>sgguested for you</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="switch">Follow</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="support-link">
+                <ul class="list">
+                    <li><a href="#" class="extra-link">About</a><span></span></li>
+                    <li><a href="#" class="extra-link">Help</a><span></span></li>
+                    <li><a href="#" class="extra-link">Press</a><span></span></li>
+                    <li><a href="#" class="extra-link">API</a><span></span></li>
+                    <li><a href="#" class="extra-link">Job</a><span></span></li>
+                    <li><a href="#" class="extra-link">Privacy</a><span></span></li>
+                    <li><a href="#" class="extra-link">Terms</a><span></span></li>
+                    <li><a href="#" class="extra-link">Location</a><span></span></li>
+                    <li><a href="#" class="extra-link">Language</a></li>
+                </ul>
+            </div>
+
+            <p class="copyright">&copy; 2022 HONEY WEB</p>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggested Page</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header chat-header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="title">ChatMe</h1>
+            </a>
+            <button class="logo-btn"><i class="fas fa-angle-down"></i></button>
+            <div class="more-link">
+                <a href="#"><i class="far fa-user"></i>Following</a>
+                <a href="#"><i class="far fa-star"></i>Favorites</a>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search">
+            <label for="search-box"><i class="fas fa-search search-icon"></i></label>
+            <input type="search" class="search-input" id="search-box" placeholder="Search">
+        </div>
+        <!-- Nav Icons -->
+        <nav class="nav-icons">
+            <a href="index.html" class="navbar-icon"><i class="fas fa-home-alt nav-links"></i></a>
+            <a href="chat.html" class="navbar-icon on-page"><i class="fab fa-facebook-messenger nav-links"></i></a>
+            <div class="navbar-icon new-post-icon"><i class="far fa-square-plus nav-links"></i></div>
+            <a href="#" class="navbar-icon"><i class="far fa-compass nav-links"></i></a>
+            <div class="navbar-icon">
+                <i class="far fa-heart nav-links  heart-icon"></i>
+                <!-- Heart PopUp box -->
+                <div class="heart-popup-box chat-heart-popup">
+                    <h2>This Month</h2>
+
+                    <!-- like One -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-12.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-4.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Two -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-2.png" alt="like-profile">
+                                <p><strong>Amelia-roya</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-3.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- like three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-3.png" alt="like-profile">
+                                <p><strong>Edward_rebort</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-7.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Three -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-6.png" alt="like-profile">
+                                <p><strong>Charlotte_Evelyn</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-2.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+                    <!-- Like Four -->
+                    <a href="#">
+                        <div class="like-box">
+                            <div class="like-image">
+                                <img src="images/Profile/profile-8.png" alt="like-profile">
+                                <p><strong>rack-dov</strong> Like your post. <span>1w</span></p>
+                            </div>
+                            <img src="images/post/post-1.png" alt="post-image" class="heart-post">
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+            <div>
+                <img src="images/Profile/profile-1.png" alt="user-profile" class="main-profile">
+                <!-- Profile PopUp box -->
+                <div class="pop-box chat-profile-box">
+                    <a href="profile-page.html"><i class="fas fa-user"></i>Profile</a>
+                    <a href="#"><i class="far fa-bookmark"></i>Saved</a>
+                    <a href="#"><i class="fas fa-gear"></i>Settings</a>
+                    <a href="#"><i class="fas fa-repeat"></i>Switch accounts</a>
+                    <hr>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Upload a new post section -->
+
+    <div class="edit-box-container" id="share-new-post">
+        <i class="fas fa-times close-button"></i>
+        <div class="edit_box share-file-box">
+            <h3>Create new post</h3>
+            <div class="upload-new-post">
+                <i class="fas fa-cloud-arrow-up"></i>
+                <p>Drag photos and videos here</p>
+            </div>
+            <label for="upload-file">Select from computer</label>
+            <input type="file" name="" id="upload-file">
+        </div>
+    </div>
+
+    <!-- suggested Hom Conatiner -->
+
+    <section class="home-container suggested-home-container">
+        <h2>Suggested</h2>
+        <!-- home box -->
+        <div class="suggested-home-box">
+            <!-- profile-1 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-2.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Amelia</h2>
+                        <span>AmeliaRoya</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-2 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-3.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Edward_rebort</h2>
+                        <span>Edward_rebort</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-3 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-4.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Camila_Luna</h2>
+                        <span>Camila_Luna</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-4 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-5.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Liam.Oliver-01</h2>
+                        <span>Liam.Oliver-01</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-5 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-6.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Charlotte_Evelyn</h2>
+                        <span>Charlotte_Evelyn</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-6 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-7.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Jack_sparrow_12</h2>
+                        <span>Jack</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-7 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-8.png" alt="profile-1">
+                    <div class="name">
+                        <h2>rack-dov</h2>
+                        <span>rack-dov</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-8 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-9.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Rebort-bohran</h2>
+                        <span>Rebort-bohran</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-9 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-10.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Jhon-015</h2>
+                        <span>Jhon</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-10 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-11.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Angelina</h2>
+                        <span>Angelina</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-11 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-12.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Cute_girl</h2>
+                        <span>Marical</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-1 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-2.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Amelia</h2>
+                        <span>AmeliaRoya</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-2 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-3.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Edward_rebort</h2>
+                        <span>Edward_rebort</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-3 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-4.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Camila_Luna</h2>
+                        <span>Camila_Luna</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-4 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-5.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Liam.Oliver-01</h2>
+                        <span>Liam.Oliver-01</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-5 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-6.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Charlotte_Evelyn</h2>
+                        <span>Charlotte_Evelyn</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-6 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-7.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Jack_sparrow_12</h2>
+                        <span>Jack</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-7 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-8.png" alt="profile-1">
+                    <div class="name">
+                        <h2>rack-dov</h2>
+                        <span>rack-dov</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-8 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-9.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Rebort-bohran</h2>
+                        <span>Rebort-bohran</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- profile-9 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-10.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Jhon-015</h2>
+                        <span>Jhon</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-10 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-11.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Angelina</h2>
+                        <span>Angelina</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+            <!-- Profile-11 -->
+            <div class="follower-profile">
+                <div class="profile-image">
+                    <img src="images/Profile/profile-12.png" alt="profile-1">
+                    <div class="name">
+                        <h2>Cute_girl</h2>
+                        <span>Marical</span>
+                        <small>Followed by Edward</small>
+                    </div>
+                </div>
+                <button class="follower-btn suggested-page-btn">Follow</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- suggestio Footer Link -->
+
+    <div class="suggestion-footer-links">
+        <div class="suggestion-footer-link">
+            <a href="#">ABOUT</a>
+            <a href="#">HELP</a>
+            <a href="#">PRESS</a>
+            <a href="#">API</a>
+            <a href="#">JOBS</a>
+            <a href="#">PRIVACY</a>
+            <a href="#">TERMS</a>
+        </div>
+        <a href="#">LOCATION</a>
+        <a href="#">LANGUAGE</a>
+        <p>&copy; 2022 INSTAGRAM From Honey Web</p>
+    </div>
+
+
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
